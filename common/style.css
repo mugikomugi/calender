@@ -1,0 +1,253 @@
+@charset "utf-8";
+
+/* Material iconsを利用する */
+.material-icons {
+  font-family: 'Material Icons';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px;  /* 推奨サイズ */
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  line-height: 1;
+  text-transform: none;
+ 
+  /* WebKitブラウザサポート */
+  -webkit-font-smoothing: antialiased;
+  /* Chrome、Safariサポート */
+  text-rendering: optimizeLegibility;
+ 
+  /* Firefoxサポート */
+  -moz-osx-font-smoothing: grayscale;
+ 
+  /* IEサポート */
+  font-feature-settings: 'liga';
+}
+/* アイコンサイズ */
+.material-icons.md-18 { font-size: 18px; }
+.material-icons.md-24 { font-size: 24px; }
+.material-icons.md-36 { font-size: 36px; }
+.material-icons.md-48 { font-size: 48px; }
+ 
+/*-------------------
+基本スタイル
+---------------------*/
+body {
+    font-size: 16px;
+    color: #417BD3;
+    line-height: 1.6;
+    background: #D0E9FF;
+}
+#logout,main {
+    width: 1000px;
+    margin: 0 auto;
+}
+#logout a {
+    display: block;
+    float: right;
+    width: 160px;
+    line-height: 35px;
+    background: #6899F5;
+    color: #fff;
+    text-align: center;
+    margin: 20px 0;
+    border-radius: 8px;
+}
+main,#scheduleMain {
+    background: #fff;
+    border-radius: 12px;
+}
+#title {
+    font-size: 40px;
+    background: url(calendar.svg) left 30px no-repeat;
+    background-size: 60px;
+    width: 520px;
+    margin: 0 auto; 
+    padding: 30px 0 30px 65px;
+}
+#infoLeft {
+    display: flex;
+    margin-bottom: 45px;
+}
+#ym {
+    margin: 0 40px 0 60px;
+    font-size: 24px;
+}
+#ym span {
+    display: inline-block;
+    font-size: 32px;
+    width: 50px;
+    line-height: 50px;
+    border-radius: 200px;
+    background: #D0E9FF;
+    text-align: center;
+    margin: 0 4px;
+}
+#next a {
+    display: block;
+    width: 120px;
+    background: #6899F5;
+    color: #fff;
+    padding: 3px 0 3px 35px;
+}
+#next a .material-icons {
+    vertical-align: top;
+}
+#next a:hover {
+    background: #FF8B8B;
+}
+#view a {
+    display: block;
+    margin: 10px 0 0 60px;
+    color: #6899F5;
+    border: solid 1px #6899F5;
+    width: 100px;
+    text-align: center;
+    border-radius: 6px;
+    font-size: 14px;
+}
+#info {
+    width: 640px;
+}
+#cale {
+    width: 875px;
+    margin: 0 auto;
+}
+#cale tr {
+    border-bottom: solid 1px #DBDADA;
+}
+#cale td {
+    margin-bottom: 2px;
+}
+#cale tr:first-child td {
+    line-height: 24px;
+    background: #7ECEFD;
+    text-align: center;
+    border-radius: 8px;
+    border: solid 3px #fff;
+    font-size: 14px;
+}
+#cale tr:first-child td:first-child,#cale tr td:first-child .days,#cale .holiday .days{
+    background: #FF8B8B;
+    color: #fff;
+    font-size: 14px;
+}
+#cale tr:first-child td:last-child,table tr td:last-child .days {
+    background: #89B8FF;
+    color: #fff;
+    font-size: 14px;
+}
+.days {
+    width: 25px;
+    line-height: 25px;
+    background: #D0E9FF;
+    text-align: center;
+    border-radius: 50px;
+    margin: 10px auto 6px auto;
+    display: block;
+    font-size: 14px;
+}
+.memo {
+    width: 112px;
+    height: 50px;
+    border: solid 1px #ADD5F7;
+    border-radius: 6px;
+    font-size: 16px;
+    color: #417BD3;
+    margin: 0 0 0 3px;
+    font-size: 14px;
+}
+#update {
+    padding-bottom: 70px;
+}
+#update input,#update a {
+    display: block;
+    width: 250px;
+    line-height: 40px;
+    text-align: center;
+    background: #FF8B8B;
+    color: #fff;
+    border-radius: 12px;
+    font-size: 18px;
+    margin: 50px auto 0 auto;
+    cursor: pointer;
+    transition: 0.5s;
+}
+#update input:hover,#update a:hover {
+    background: #EF5350;
+}
+/*-------------------
+一覧ページ
+---------------------*/
+#frontHeader {
+    width: 1000px;
+    margin: 0 auto;
+    background: url(top.svg) top left no-repeat;
+    padding: 40px 0;
+}
+#frontHeader p {
+    text-align: center;
+}
+#scheduleMain {
+    padding: 30px 0 60px 0;
+}
+#scheduleMain table {
+    margin-top: 45px;
+}
+.memoUp {
+    padding: 10px 5px;
+    width: 124px;
+    min-height: 70px;
+    line-height: 1.2;
+    margin: 0 0 0 3px;
+    font-size: 14px;
+}
+/*-------------------
+ログイン
+---------------------*/
+#loginPage {
+    background: #D0E9FF;
+    padding-bottom: 200px;
+}
+#loginPage div {
+    width: 500px;
+    margin: 20px auto;
+    display: flex;
+}
+#loginPage label {
+    display: block;
+    width: 150px;
+    padding-top: 6px;
+    font-size: 18px;
+    text-align: center;
+}
+#loginPage div input {
+    display: block;
+    width: 350px;
+    line-height: 24px;
+    padding: 4px 10px;
+    border-radius: 6px;
+    font-size: 16px;
+}
+.guidance {
+    font-size: 18px;
+    text-align: center;
+}
+/*-------------------
+共通
+---------------------*/
+footer {
+    margin-top: 70px;
+}
+footer small {
+    display: block;
+    text-align: center;
+    font-size: 12px;
+    padding-bottom: 4px;
+}
+.center {
+    text-align: center;
+}
+.red {
+    color: #FF8B8B;
+}
