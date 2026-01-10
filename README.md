@@ -28,6 +28,14 @@ CSS次第でサイトへ組込みを想定しています。<br>
 店舗や企業などのシフト・営業案内に使用できると思い作りました。<br>管理画面から入力できればFTPを使わず更新できて便利かなと。
 <br><br>
 ※カスタマイズOKです。ただし不具合が起きましたら自己責任でお願いします。<br><br>
+
+### 2026/01/15更新：祝日を自動取得
+
+holiday.phpをCDNで祝日を自動取得できるよう書き換えました。<br>
+csvで読み込み、条件分岐用に文字列を整形。<br>
+https://holidays-jp.github.io/
+<br><br>
+
 ### DEMOサイト
 https://gallery.okamechan.com/my_calender/schedule.php
 <br>
