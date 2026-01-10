@@ -62,7 +62,7 @@ for (; $d <= $lastday; $d++) {
   ][(int) $m]) ? 'holiday' : 'none';
 }
 
-/Qitaから教えてもらったコード
+//Qitaから教えてもらったコード
 /* 手動で書き込む旧ver.
 for(; $d <= $lastday; $d++) {
     $holiday[$d] = in_array($d, [
