@@ -63,14 +63,17 @@
         $json = json_encode($name);
         //JSON書き出し、パーミッション変更忘れずに
         //タイマー設定で前月にもデータを入れておかないと消えてしまう
-        file_put_contents('./json/days'.($m-1).'.json',$json);
+        if ($m === 1) {
+    		file_put_contents('./json/days12.json', $json);
+		  } else {
+    		file_put_contents('./json/days' . ($m - 1) . '.json', $json);
+		  }
         file_put_contents('./json/days'.$m.'.json',$json);
         //jsonファイルを取得、valueに再代入
         $file = file_get_contents('./json/days'.$m.'.json');
         //文字コードをUTF-8に変換する
         $data = mb_convert_encoding($file, 'UTF8', 'ASCII,JIS,UTF-8,EUC-JP,SJIS-WIN');
         $array = json_decode($data,true);
-
     }
 
 ?>
